@@ -33,6 +33,59 @@ Simple. Stylish. Powerful.
 - ⚡ Interactive terminal interface.
 - 🎭 FIGlet ASCII terminal banner.
 
+---
+
+⚡ QUICK INSTALLATION
+
+Get BaziGarr QR Generator running in just a few steps!
+
+1️⃣ Clone Repository
+
+git clone https://github.com/csrb4zzigar-07/QR-CODE-GENERETOR.git
+
+2️⃣ Open Project Folder
+
+cd QR-CODE-GENERETOR
+
+3️⃣ Install Python Dependencies
+
+pip install -r requirements.txt
+
+4️⃣ Install FIGlet
+
+For Termux:
+
+pkg update && pkg install figlet
+
+For Kali Linux / Debian:
+
+sudo apt update && sudo apt install figlet
+
+5️⃣ Launch QR Generator
+
+python3 "qr-code genretor"
+
+<details>
+<summary><b>📦 All Installation Commands (Copy Together)</b></summary>Termux:
+
+git clone https://github.com/csrb4zzigar-07/QR-CODE-GENERETOR.git
+cd QR-CODE-GENERETOR
+pkg update
+pkg install python figlet
+pip install -r requirements.txt
+python3 "qr-code genretor"
+
+Kali Linux / Debian:
+
+git clone https://github.com/csrb4zzigar-07/QR-CODE-GENERETOR.git
+cd QR-CODE-GENERETOR
+sudo apt update
+sudo apt install python3 python3-pip figlet
+pip install -r requirements.txt
+python3 "qr-code genretor"
+
+</details>---
+
 📸 Preview
 
 <p align="center">
@@ -49,37 +102,7 @@ Simple. Stylish. Powerful.
 
 Python dependencies are listed in "requirements.txt".
 
-📦 Installation
-
-1. Clone the repository
-
-git clone https://github.com/csrb4zzigar-07/QR-CODE-GENERETOR.git
-
-2. Enter the project directory
-
-cd QR-CODE-GENERETOR
-
-3. Install Python dependencies
-
-pip install -r requirements.txt
-
-4. Install FIGlet
-
-Termux:
-
-pkg update
-pkg install figlet
-
-Kali Linux / Debian:
-
-sudo apt update
-sudo apt install figlet
-
 ▶️ Usage
-
-Run the QR Generator:
-
-python3 "qr-code genretor"
 
 Step 1: Enter a URL
 
@@ -90,8 +113,6 @@ Step 2: Enter an image name
 📝 Enter Name of the QR-Image: GitHub
 
 Step 3: Save your QR image
-
-The program will ask:
 
 💾 SAVE THIS IMAGE? (y/n):
 
@@ -123,7 +144,7 @@ Note: The default save path is configured for Android shared storage. On other L
 
 ⚙️ Customization
 
-Customize the QR gradient and appearance by modifying:
+Customize the QR gradient and appearance:
 
 GREEN = (0, 200, 115)
 CYAN = (0, 185, 180)
