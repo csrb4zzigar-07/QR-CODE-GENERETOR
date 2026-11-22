@@ -13,7 +13,7 @@
 
 BaziGarr QR Generator is a Python-based QR code generation tool designed for Android, Termux, and Linux environments.
 
-Generate stylish QR codes with a beautiful Green → Cyan → Blue gradient design, preview them directly in your terminal, and save them as PNG images with matching gradient-colored filenames.
+Generate beautiful QR codes with a modern Green → Cyan → Blue gradient design, preview them directly in your terminal, and save them as PNG images with matching gradient-colored filenames.
 
 Simple. Stylish. Powerful.
 
@@ -35,104 +35,117 @@ Simple. Stylish. Powerful.
 
 ---
 
-⚡ QUICK INSTALLATION
+⚡ Installation Guide
 
-Get BaziGarr QR Generator running in just a few steps!
+Follow the steps below to install and run BaziGarr QR Generator.
 
-1️⃣ Clone Repository
+📱 Installation on Termux
+
+Step 1 — Install Git, Python and FIGlet
+
+pkg update && pkg upgrade -y
+
+pkg install git python figlet -y
+
+Step 2 — Clone Repository
 
 git clone https://github.com/csrb4zzigar-07/QR-CODE-GENERETOR.git
 
-2️⃣ Open Project Folder
+Step 3 — Open Project Directory
 
 cd QR-CODE-GENERETOR
 
-3️⃣ Install Python Dependencies
+Step 4 — Install Python Dependencies
 
 pip install -r requirements.txt
 
-4️⃣ Install FIGlet
-
-For Termux:
-
-pkg update && pkg install figlet
-
-For Kali Linux / Debian:
-
-sudo apt update && sudo apt install figlet
-
-5️⃣ Launch QR Generator
+Step 5 — Run BaziGarr QR Generator
 
 python3 "qr-code genretor"
 
-<details>
-<summary><b>📦 All Installation Commands (Copy Together)</b></summary>Termux:
+---
+
+🐉 Installation on Kali Linux
+
+Step 1 — Update Packages
+
+sudo apt update && sudo apt upgrade -y
+
+Step 2 — Install Required Packages
+
+sudo apt install git python3 python3-pip python3-venv figlet -y
+
+Step 3 — Clone Repository
 
 git clone https://github.com/csrb4zzigar-07/QR-CODE-GENERETOR.git
+
+Step 4 — Open Project Directory
+
 cd QR-CODE-GENERETOR
-pkg update
-pkg install python figlet
+
+Step 5 — Create Virtual Environment
+
+python3 -m venv .venv
+
+Step 6 — Activate Virtual Environment
+
+source .venv/bin/activate
+
+Step 7 — Install Python Dependencies
+
 pip install -r requirements.txt
+
+Step 8 — Run BaziGarr QR Generator
+
 python3 "qr-code genretor"
 
-Kali Linux / Debian:
+---
 
-git clone https://github.com/csrb4zzigar-07/QR-CODE-GENERETOR.git
-cd QR-CODE-GENERETOR
-sudo apt update
-sudo apt install python3 python3-pip figlet
-pip install -r requirements.txt
-python3 "qr-code genretor"
-
-</details>---
-
-📸 Preview
+📸 Terminal Preview
 
 <p align="center">
   <img src="terminal-preview.jpg" alt="BaziGarr QR Generator Terminal Preview" width="350">
 </p><p align="center">
   <b>BAZIGARR QR GENERATOR</b>
   <br>
-  <i>Terminal QR generation with gradient styling.</i>
-</p>📋 Requirements
+  <i>Beautiful gradient QR generation directly in the terminal.</i>
+</p>---
 
-- Python 3.x
-- pip
-- FIGlet
+🎯 How to Use
 
-Python dependencies are listed in "requirements.txt".
-
-▶️ Usage
-
-Step 1: Enter a URL
+1. Enter a URL
 
 🔗 Enter Link/URL: https://github.com
 
-Step 2: Enter an image name
+2. Enter QR Image Name
 
 📝 Enter Name of the QR-Image: GitHub
 
-Step 3: Save your QR image
+3. Save Your QR Image
+
+After generating the QR code, the program asks:
 
 💾 SAVE THIS IMAGE? (y/n):
 
-- Enter "y" to save the generated QR image.
+- Enter "y" to save the QR image.
 - Enter "n" to skip saving.
 
-Step 4: Generate another QR code
+4. Generate Another QR Code
 
 1. Next Link 🔗
 2. Exit ❌
 
 Choose "1" to generate another QR code or "2" to exit.
 
+---
+
 📂 Output Location
 
-Default image save location:
+Generated QR images are saved in:
 
 /storage/emulated/0/Pictures/QR_CODE
 
-Example:
+Example directory structure:
 
 Pictures/
 └── QR_CODE/
@@ -140,11 +153,13 @@ Pictures/
     ├── YouTube.png
     └── MyWebsite.png
 
-Note: The default save path is configured for Android shared storage. On other Linux systems, you may need to change "SAVE_DIR" in the Python script.
+Note: The default save location is configured for Android shared storage. On other Linux systems, change "SAVE_DIR" in the Python script to a suitable directory.
+
+---
 
 ⚙️ Customization
 
-Customize the QR gradient and appearance:
+Customize the QR gradient and appearance by modifying these settings:
 
 GREEN = (0, 200, 115)
 CYAN = (0, 185, 180)
@@ -153,13 +168,25 @@ BLUE = (0, 155, 225)
 MODULE_SIZE = 12
 BORDER = 4
 
-🛠️ Built With
+---
+
+📦 Dependencies
+
+All required Python libraries are listed in "requirements.txt".
+
+Install them using:
+
+pip install -r requirements.txt
+
+Built With
 
 Technology| Purpose
 Python| Core programming language
 qrcode| QR code generation
 Pillow| Image processing and gradient rendering
-FIGlet| ASCII terminal banner
+FIGlet| Terminal ASCII banner
+
+---
 
 📁 Project Structure
 
@@ -170,22 +197,23 @@ QR-CODE-GENERETOR/
 ├── terminal-preview.jpg
 └── qr-code genretor
 
+---
+
 👨‍💻 Author
 
 BaziGarr
 
 Created with ❤️ and Python.
 
-⭐ Support
+⭐ Support the Project
 
-If you like this project:
+If you like BaziGarr QR Generator:
 
-- ⭐ Star this repository.
-- 🍴 Fork the project.
-- 💡 Share suggestions and improvements.
+- ⭐ Give this repository a Star.
+- 🍴 Fork the repository.
+- 💡 Share your suggestions.
 - 🐛 Report bugs through GitHub Issues.
-
-Contributions are welcome!
+- 🤝 Contributions are welcome!
 
 ---
 
@@ -193,4 +221,6 @@ Contributions are welcome!
   <b>🔥 BAZIGARR QR GENERATOR 🔥</b>
   <br>
   <i>Generate. Customize. Scan.</i>
+  <br><br>
+  Made with ❤️ by BaziGarr
 </p>
