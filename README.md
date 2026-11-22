@@ -4,18 +4,18 @@
   <b>A Stylish Gradient QR Code Generator for Python</b>
 </p><p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20Linux-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Platform-Termux%20%7C%20Android-green?style=for-the-badge">
   <img src="https://img.shields.io/badge/Interface-Terminal-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/Output-PNG-orange?style=for-the-badge">
-</p>🚀 About
+</p>---
+
+🚀 About
 
 BaziGarr QR Generator is a Python-based QR code generation tool designed for Android, Termux, and Linux environments.
 
-It generates beautiful QR codes with a modern Green → Cyan → Blue gradient design and displays them directly in the terminal.
+Generate stylish QR codes with a beautiful Green → Cyan → Blue gradient design, preview them directly in your terminal, and save them as PNG images with matching gradient-colored filenames.
 
-You can also save your generated QR codes as PNG images with a perfectly centered gradient filename.
-
-Simple, stylish, and easy to use!
+Simple. Stylish. Powerful.
 
 ✨ Features
 
@@ -23,39 +23,45 @@ Simple, stylish, and easy to use!
 - 📱 QR code preview directly in the terminal.
 - 🌈 Gradient-colored filename in terminal and saved images.
 - 🎯 Centered filename below the QR code.
-- 🖼️ High-resolution PNG image generation.
-- 💾 Optional image saving with a Y/N confirmation.
+- 🖼️ PNG image generation.
+- 💾 Optional image saving with Y/N confirmation.
 - 🔗 Automatic HTTPS prefix for URLs without a protocol.
 - 🔄 Generate multiple QR codes without restarting.
 - 📂 Automatic output directory creation.
 - 🛡️ High QR error correction (Level H).
-- ⚡ Simple interactive terminal interface.
-- 🏷️ Custom filename support.
+- 🏷️ Custom QR image filenames.
+- ⚡ Interactive terminal interface.
+- 🎭 FIGlet ASCII terminal banner.
 
 📸 Preview
 
 <p align="center">
-  <i>Terminal preview and generated QR image screenshots can be added here.</i>
+  <img src="terminal-preview.jpg" alt="BaziGarr QR Generator Terminal Preview" width="350">
+</p><p align="center">
+  <b>BAZIGARR QR GENERATOR</b>
+  <br>
+  <i>Terminal QR generation with gradient styling.</i>
 </p>📋 Requirements
 
 - Python 3.x
-- qrcode
-- Pillow
-- FIGlet 
+- pip
+- FIGlet
+
+Python dependencies are listed in "requirements.txt".
 
 📦 Installation
 
 1. Clone the repository
 
-git clone https://github.com/hckrr-bazigarr/BaziGarr-QR-Generator.git
+git clone https://github.com/csrb4zzigar-07/QR-CODE-GENERETOR.git
 
 2. Enter the project directory
 
-cd BaziGarr-QR-Generator
+cd QR-CODE-GENERETOR
 
 3. Install Python dependencies
 
-pip install qrcode[pil] Pillow
+pip install -r requirements.txt
 
 4. Install FIGlet
 
@@ -71,35 +77,37 @@ sudo apt install figlet
 
 ▶️ Usage
 
-Run the script:
+Run the QR Generator:
 
-python3 BaziGarrQR.py
+python3 "qr-code genretor"
 
-Enter your URL:
+Step 1: Enter a URL
 
-🔗 Enter Link/URL: https://example.com
+🔗 Enter Link/URL: https://github.com
 
-Enter your preferred QR image filename:
+Step 2: Enter an image name
 
-📝 Enter Name of the QR-Image: MyWebsite
+📝 Enter Name of the QR-Image: GitHub
 
-The QR code will be generated and displayed in your terminal.
+Step 3: Save your QR image
 
-You will then see:
+The program will ask:
 
 💾 SAVE THIS IMAGE? (y/n):
 
-- Enter "y" to save the QR image.
+- Enter "y" to save the generated QR image.
 - Enter "n" to skip saving.
 
-After generation, choose:
+Step 4: Generate another QR code
 
 1. Next Link 🔗
 2. Exit ❌
 
+Choose "1" to generate another QR code or "2" to exit.
+
 📂 Output Location
 
-Generated QR images are saved in:
+Default image save location:
 
 /storage/emulated/0/Pictures/QR_CODE
 
@@ -107,13 +115,15 @@ Example:
 
 Pictures/
 └── QR_CODE/
-    ├── MyWebsite.png
+    ├── GitHub.png
     ├── YouTube.png
-    └── GitHub.png
+    └── MyWebsite.png
+
+Note: The default save path is configured for Android shared storage. On other Linux systems, you may need to change "SAVE_DIR" in the Python script.
 
 ⚙️ Customization
 
-You can customize the QR design by modifying these values in the Python script:
+Customize the QR gradient and appearance by modifying:
 
 GREEN = (0, 200, 115)
 CYAN = (0, 185, 180)
@@ -124,10 +134,20 @@ BORDER = 4
 
 🛠️ Built With
 
-- Python – Core programming language.
-- qrcode – QR code generation.
-- Pillow (PIL) – Image creation and gradient rendering.
-- FIGlet – ASCII terminal banner.
+Technology| Purpose
+Python| Core programming language
+qrcode| QR code generation
+Pillow| Image processing and gradient rendering
+FIGlet| ASCII terminal banner
+
+📁 Project Structure
+
+QR-CODE-GENERETOR/
+│
+├── README.md
+├── requirements.txt
+├── terminal-preview.jpg
+└── qr-code genretor
 
 👨‍💻 Author
 
@@ -137,9 +157,14 @@ Created with ❤️ and Python.
 
 ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub!
+If you like this project:
 
-Contributions, suggestions, and improvements are welcome.
+- ⭐ Star this repository.
+- 🍴 Fork the project.
+- 💡 Share suggestions and improvements.
+- 🐛 Report bugs through GitHub Issues.
+
+Contributions are welcome!
 
 ---
 
